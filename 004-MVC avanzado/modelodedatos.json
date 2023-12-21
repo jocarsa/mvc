@@ -1,0 +1,11 @@
+{
+    "campos":[
+        "nombre",
+        "identificador",
+        "direccion",
+        "telefono",
+        "email",
+        "poblacion",
+        "codigopostal"
+    ]
+}
