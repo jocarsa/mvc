@@ -1,0 +1,21 @@
+{
+    "campos":[
+        {
+            "nombre":"nombrecompleto",
+            "tipo":"text",
+            "min":5,
+            "max":50
+        },
+       {
+            "nombre":"altura",
+            "tipo":"number",
+            "min":0,
+            "max":200
+        },
+       {
+            "nombre":"fechadenacimiento",
+            "tipo":"date"
+            
+        }
+    ]
+}

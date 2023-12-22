@@ -1,0 +1,15 @@
+body{
+    background:rgb(220,220,220);
+}
+form{
+    margin:auto;
+    width:300px;
+    background:white;
+    padding:20px;
+}
+form input{
+    width:100%;
+    box-sizing: border-box;
+    padding:5px;
+    margin-top:10px;
+}

@@ -1,0 +1,53 @@
+     [
+        {
+            "nombre":"usuarios",
+            "esquema":[
+                {
+                    "nombre":"nombrecompleto",
+                    "tipo":"text",
+                    "min":5,
+                    "max":50
+                },
+               {
+                    "nombre":"altura",
+                    "tipo":"number",
+                    "min":0,
+                    "max":200
+                },
+               {
+                    "nombre":"fechadenacimiento",
+                    "tipo":"date"
+
+                }
+                ,
+               {
+                    "nombre":"email",
+                    "tipo":"email"
+
+                }
+            ]
+        },
+        {
+            "nombre":"productos",
+            "esquema":[
+                {
+                    "nombre":"nombredelproducto",
+                    "tipo":"text",
+                    "min":5,
+                    "max":50
+                },
+               {
+                    "nombre":"precio",
+                    "tipo":"number",
+                    "min":0,
+                    "max":200
+                },
+               {
+                    "nombre":"stock",
+                    "tipo":"number"
+
+                }
+                
+            ]
+        }
+     ]
