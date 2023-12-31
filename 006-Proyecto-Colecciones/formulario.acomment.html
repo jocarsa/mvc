@@ -1,0 +1,23 @@
+﻿El bloque de código del ejercicio del curso  es un fragmento de código HTML que representa una página web básica. Aquí está la explicación de cada parte:
+
+1. `<!doctype html>`: Esta línea declara que el documento HTML seguirá el estándar HTML5.
+
+2. `<html>`: El elemento HTML raíz que engloba todo el contenido de la página.
+
+3. `<head>`: Esta sección contiene metadatos y enlaces a recursos externos. En este caso, se vincula una hoja de estilo CSS y no contiene contenido visible en la página.
+
+   - `<link rel="stylesheet" href="estilo.css">`: Este enlace (`<link>`) importa una hoja de estilo externa llamada "estilo.css". La hoja de estilo se utilizará para aplicar estilos a los elementos HTML en la página.
+
+4. `<body>`: Esta sección contiene el contenido visible de la página.
+
+   - `<form action="procesa.php" method="POST">`: Aquí se crea un formulario (`<form>`) que enviará datos a un script PHP llamado "procesa.php" utilizando el método POST cuando se envíe el formulario. Esto generalmente se usa para procesar datos ingresados por el usuario.
+
+     - `<div id="contienecolecciones">`: Un contenedor (`<div>`) con el atributo `id` "contienecolecciones". El contenido de este div puede ser dinámico y puede llenarse con elementos adicionales a través de JavaScript.
+
+     - `<div id="contienecampos">`: Otro contenedor (`<div>`) con el atributo `id` "contienecampos". Al igual que el anterior, este div puede llenarse con elementos adicionales a través de JavaScript.
+
+     - `<input type="submit">`: Un elemento de entrada (`<input>`) de tipo "submit". Este elemento se utiliza para crear un botón de envío en el formulario. Cuando se hace clic en este botón, el formulario se enviará al script especificado en el atributo "action" utilizando el método POST.
+
+   - `<script src="formulario.js"></script>`: Aquí se incluye un archivo JavaScript externo llamado "formulario.js". Este archivo se cargará y ejecutará en la página, lo que permite la interacción dinámica con el contenido de la página.
+
+En resumen, este fragmento de código HTML define una página web con un formulario que envía datos a un script PHP llamado "procesa.php". También incluye referencias a una hoja de estilo CSS y un archivo JavaScript llamado "formulario.js" para el estilo y la funcionalidad interactiva de la página.

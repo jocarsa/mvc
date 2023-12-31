@@ -1,0 +1,11 @@
+En este nuevo ejercicio, vamos a desarrollar una variación sobre el ejercicio anterior. En esta ocasión, vamos a realizar una separación más clara entre la vista y el controlador. Para empezar, separaremos la vista en un archivo que tendrá únicamente la extensión HTML, lo que nos permitirá asegurarnos de que no haya ningún script PHP en ese archivo, evitando así la mezcla de los conceptos de vista y controlador.
+
+Luego, toda la parte de procesamiento de la información que proviene de la vista, es decir, lo que denominaríamos el controlador, se ubicará en un archivo externo con extensión PHP. De esta manera, en comparación con el desarrollo del ejercicio anterior, en el que trabajábamos con un bloque de software monolítico, estamos comenzando a realizar una primera separación en dos capas:
+
+Vista (archivo HTML): Aquí se presenta la interfaz al usuario y no contiene lógica de control.
+
+Controlador (archivo PHP): Aquí se maneja la lógica y el procesamiento de la información proveniente de la vista.
+
+Ahora bien, es importante señalar qué ocurre con el modelo de datos en este ejercicio. El modelo de datos sigue existiendo, pero de manera conceptual. Sabemos que el modelo de datos es el mismo que hemos trabajado en la versión anterior del ejercicio. Como desarrolladores, lo estamos implementando tanto en la vista (formulario HTML) como en el archivo PHP que procesa esa vista. La única diferencia es que en este ejercicio, esta implementación se realiza de forma completamente manual. Por lo tanto, el desarrollador tiene la responsabilidad de implementar el modelo de datos de manera correcta tanto en el formulario HTML (vista) como en el archivo PHP (controlador).
+
+Este ejercicio representa un avance con respecto a la versión anterior, pero en las próximas versiones continuaremos mejorando la separación en diferentes capas.

@@ -1,0 +1,7 @@
+En la versión anterior del ejercicio en la que estábamos trabajando, teníamos la pequeña desventaja de que finalmente se guardaban todos los archivos JSON dentro de la misma carpeta, es decir, dentro de nuestro proyecto. Sabemos que existe una carpeta que tiene el nombre "B" y que es la carpeta en la cual se guardan todos los archivos derivados de cada vez que un usuario rellena información dentro del formulario.
+
+Sin embargo, guardar toda esa información dentro de una misma carpeta puede resultar confuso a medida que la cantidad de datos aumenta. Por lo tanto, en esta siguiente versión del ejercicio, vamos a mejorar la organización de los archivos JSON. Lo que haremos es crear diferentes subcarpetas dentro de la carpeta principal donde se guarda la base de datos.
+
+Cada una de estas subcarpetas corresponderá a una de las entidades que existen dentro de la aplicación. Para lograrlo, actualizaremos el controlador para que sea capaz de detectar cuál es la colección o entidad con la cual el usuario está trabajando. De esta manera, el controlador guardará el archivo JSON en la subcarpeta correspondiente.
+
+Este enfoque de organización de archivos mejora significativamente la claridad y la gestión de la información dentro de la base de datos que estamos construyendo. Cada entidad tiene su propio espacio ordenado, lo que facilita la búsqueda y el acceso a los datos.

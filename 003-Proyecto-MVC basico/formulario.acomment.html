@@ -1,0 +1,19 @@
+﻿El código HTML del ejercicio del curso  es una estructura básica de una página web que contiene un formulario. Aquí está la explicación de cada parte del código:
+
+1. `<!doctype html>`: Esta línea define el tipo de documento como un documento HTML5, que es la versión más reciente y común de HTML.
+
+2. `<html>`: Este elemento marca el inicio del documento HTML y encierra todo el contenido de la página.
+
+3. `<head>`: El contenido dentro de esta etiqueta se utiliza para incluir metadatos y enlaces a recursos externos, como hojas de estilo, fuentes o scripts. En este caso, se está incluyendo un archivo de hoja de estilo externo llamado "estilo.css" que se utilizará para dar estilo a la página.
+
+4. `<link rel="stylesheet" href="estilo.css">`: Esta línea crea un enlace a una hoja de estilo externa llamada "estilo.css". La hoja de estilo se utilizará para aplicar estilos CSS a los elementos HTML en la página, como colores, fuentes y diseño.
+
+5. `<body>`: Dentro de esta etiqueta se encuentra el contenido principal de la página, que se mostrará en el navegador web. En este caso, el formulario se encuentra dentro del cuerpo de la página.
+
+6. `<form action="procesa.php" method="POST">`: Esta etiqueta define un formulario HTML. El atributo `action` especifica la URL a la que se enviarán los datos cuando el formulario se envíe. En este caso, los datos se enviarán a "procesa.php". El atributo `method` especifica el método HTTP que se utilizará para enviar los datos, en este caso, "POST".
+
+7. Dentro del formulario, hay varios campos de entrada representados por `<input>` con diferentes atributos. Cada campo de entrada tiene un atributo `type` que define el tipo de entrada. En este caso, todos son de tipo "text", lo que significa que permiten la entrada de texto. Cada `<input>` también tiene un atributo `name` que se utilizará para identificar el campo cuando se envíen los datos.
+
+8. `<input type="submit">`: Este es un botón de envío que permite al usuario enviar el formulario. Cuando el usuario hace clic en este botón, se enviarán los datos del formulario a la URL especificada en el atributo `action`.
+
+En resumen, este código HTML crea una página web con un formulario que contiene campos para ingresar nombre, identificación, dirección, teléfono y correo electrónico. Cuando el usuario completa el formulario y hace clic en el botón de envío, los datos se enviarán a un archivo PHP llamado "procesa.php" para su procesamiento posterior. La apariencia de la página y los estilos se definirán en el archivo "estilo.css".

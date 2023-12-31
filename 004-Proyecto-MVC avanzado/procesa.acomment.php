@@ -1,0 +1,9 @@
+﻿El fragmento de código PHP del ejercicio del curso  parece estar diseñado para manejar una solicitud POST enviada desde un formulario HTML. Aquí tienes una explicación de lo que hace:
+
+1. `if(isset($_POST['nombre']))`: Esta línea verifica si existe una variable POST llamada "nombre". `$_POST` es un array en PHP que contiene datos enviados a través de una solicitud POST. Esto se utiliza para asegurarse de que la solicitud POST contiene el campo "nombre" antes de continuar.
+
+2. `$json = json_encode($_POST, JSON_PRETTY_PRINT);`: Si la variable POST "nombre" existe, este código convierte todo el contenido de `$_POST` en una cadena JSON utilizando la función `json_encode()`. El uso de `JSON_PRETTY_PRINT` hace que la salida JSON sea más legible al agregar espacios y saltos de línea para formatearla correctamente.
+
+3. `file_put_contents("db/".date('U').".json", $json);`: Finalmente, esta línea guarda la cadena JSON en un archivo en el directorio "db". El nombre del archivo se genera dinámicamente utilizando la función `date('U')`, que devuelve una marca de tiempo Unix única, seguida de ".json". Esto significa que cada archivo JSON tendrá un nombre único basado en la marca de tiempo en la que se guardó. La función `file_put_contents()` se utiliza para escribir el contenido JSON en el archivo.
+
+En resumen, este código PHP comprueba si se ha enviado un campo llamado "nombre" a través de una solicitud POST. Si existe, toma todos los datos de la solicitud POST, los convierte en formato JSON y los guarda en un archivo en el directorio "db" con un nombre único basado en la marca de tiempo Unix. Esto se puede utilizar para almacenar datos enviados desde un formulario web en archivos JSON en el servidor.

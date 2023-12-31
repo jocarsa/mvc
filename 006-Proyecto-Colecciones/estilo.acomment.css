@@ -1,0 +1,27 @@
+﻿El bloque de código del ejercicio del curso  es un conjunto de reglas CSS que se utilizan para dar estilo a elementos HTML en una página web. Aquí tienes una explicación de las reglas CSS que se aplican:
+
+1. `body`: Esta regla se aplica al elemento `<body>` de la página web. Define el estilo del fondo para todo el cuerpo de la página.
+
+   - `background: rgb(220, 220, 220);`: Establece el color de fondo del cuerpo en un tono de gris claro con el valor RGB (220, 220, 220). Esto resulta en un fondo de color gris claro para toda la página.
+
+2. `form`: Esta regla se aplica a los elementos `<form>` de la página web, lo que significa que afecta al formulario en la página.
+
+   - `margin: auto;`: Centra el formulario horizontalmente en el centro de su contenedor padre. Esto se logra estableciendo los márgenes izquierdo y derecho en "auto".
+
+   - `width: 300px;`: Establece el ancho del formulario en 300 píxeles.
+
+   - `background: white;`: Establece el fondo del formulario en blanco, lo que crea un área blanca alrededor del formulario.
+
+   - `padding: 20px;`: Agrega un relleno de 20 píxeles alrededor del contenido del formulario, lo que separa los elementos del borde del formulario.
+
+3. `form input`: Esta regla se aplica a todos los elementos de entrada (`<input>`) dentro del formulario.
+
+   - `width: 100%;`: Hace que los elementos de entrada ocupen todo el ancho disponible dentro del formulario, lo que los hace extenderse desde el borde izquierdo hasta el borde derecho del formulario.
+
+   - `box-sizing: border-box;`: Cambia el modelo de caja de los elementos de entrada a "border-box", lo que significa que el ancho especificado (100%) incluirá el tamaño del borde y el relleno, en lugar de agregarlos al ancho total.
+
+   - `padding: 5px;`: Agrega un relleno de 5 píxeles a todos los lados de los elementos de entrada, lo que crea espacio entre el contenido del elemento y su borde.
+
+   - `margin-top: 10px;`: Agrega un margen superior de 10 píxeles a cada elemento de entrada, lo que crea espacio entre ellos verticalmente.
+
+En resumen, estas reglas CSS se utilizan para dar estilo a la página web, creando un fondo gris claro, centrando un formulario en el centro de la página, y aplicando estilos específicos a los elementos de entrada dentro del formulario para que se vean bien y estén espaciados correctamente.

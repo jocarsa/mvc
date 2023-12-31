@@ -1,0 +1,21 @@
+﻿El fragmento de código del ejercicio del curso  es una estructura básica de una página web HTML. Aquí tienes una explicación de cada parte del código:
+
+1. `<!doctype html>`: Esta línea declara el tipo de documento que está siendo utilizado, en este caso, HTML5.
+
+2. `<html>`: Este elemento marca el comienzo del documento HTML y envuelve todo el contenido HTML.
+
+3. `<head>`: El contenido dentro de este elemento `<head>` se utiliza para incluir metadatos, enlaces a hojas de estilo, scripts, y otros recursos que no se muestran directamente en la página web, pero son importantes para su funcionamiento y apariencia.
+
+   - `<link rel="stylesheet" href="estilo.css">`: Esta línea enlaza una hoja de estilo externa llamada "estilo.css" al documento HTML. Esto permite aplicar estilos CSS a los elementos HTML de la página para controlar su apariencia.
+
+4. `<body>`: El contenido dentro de este elemento `<body>` es lo que se mostrará en la página web. Aquí es donde colocas el contenido visible de tu sitio web.
+
+   - `<form action="procesa.php" method="POST">`: Este código define un formulario HTML. El atributo `action` especifica la URL a la que se enviarán los datos del formulario cuando el usuario lo envíe. En este caso, los datos se enviarán a "procesa.php". El atributo `method` especifica el método HTTP que se utilizará para enviar los datos, que es "POST" en este caso.
+
+   - `<div id="contienecampos">`: Este es un contenedor `<div>` que parece estar vacío en este momento. Puede utilizarse para contener elementos de formulario u otros elementos HTML en el futuro. Tiene un atributo `id` con el valor "contienecampos", lo que significa que puede ser seleccionado y estilizado con CSS o manipulado con JavaScript.
+
+   - `<input type="submit">`: Este es un elemento de entrada de tipo "submit". Es un botón que, cuando se hace clic, enviará el formulario al servidor. No tiene un valor especificado, por lo que se usará el valor predeterminado, que suele ser "Submit" o "Enviar".
+
+   - `<script src="formulario.js"></script>`: Este elemento `<script>` enlaza un archivo JavaScript externo llamado "formulario.js" al documento HTML. Esto permite ejecutar código JavaScript en la página para agregar interactividad y funcionalidad.
+
+En resumen, este código HTML crea una página web básica con un formulario y enlaza una hoja de estilo CSS y un archivo JavaScript externos para controlar su apariencia y comportamiento. El formulario enviará sus datos a un archivo PHP llamado "procesa.php" cuando se envíe.

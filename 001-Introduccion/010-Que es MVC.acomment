@@ -1,0 +1,25 @@
+MVC, que significa Modelo-Vista-Controlador, es un patrón de diseño de software ampliamente utilizado en el desarrollo de aplicaciones web y de escritorio. Su objetivo principal es organizar y separar los componentes de una aplicación en tres partes principales, cada una con una responsabilidad específica, para facilitar la gestión, el mantenimiento y la escalabilidad del código. Aquí tienes una explicación detallada de cada una de las partes del patrón MVC:
+
+1. Modelo (Model):
+   - El Modelo representa la parte de la aplicación que se encarga de la gestión de datos y la lógica de negocios.
+   - Contiene la información o los datos de la aplicación y define cómo acceder y manipular esos datos.
+   - No está directamente relacionado con la interfaz de usuario ni con la presentación de datos.
+
+2. Vista (View):
+   - La Vista es la parte de la aplicación que se encarga de la presentación de datos al usuario y de la interfaz de usuario.
+   - Muestra la información que proviene del Modelo y la presenta de una manera comprensible y atractiva.
+   - No contiene lógica de negocios, solo se enfoca en la representación visual de los datos.
+
+3. Controlador (Controller):
+   - El Controlador actúa como un intermediario entre el Modelo y la Vista.
+   - Recibe las solicitudes del usuario a través de la interfaz de usuario (generalmente a través de eventos, como clics de botón o solicitudes web) y decide cómo responder.
+   - Se encarga de gestionar las interacciones del usuario, coordinando las acciones necesarias en el Modelo y actualizando la Vista en consecuencia.
+
+El flujo típico de una aplicación que sigue el patrón MVC es el siguiente:
+1. El usuario interactúa con la Vista (por ejemplo, hace clic en un botón).
+2. La Vista envía una solicitud al Controlador.
+3. El Controlador procesa la solicitud y, si es necesario, interactúa con el Modelo para recuperar o modificar datos.
+4. El Controlador actualiza la Vista con la información relevante.
+5. El usuario ve los cambios en la Vista.
+
+La separación de responsabilidades entre el Modelo, la Vista y el Controlador facilita la modularidad del código y permite cambios en una parte de la aplicación sin afectar a las demás partes. Esto hace que el código sea más mantenible y extensible. Además, el patrón MVC promueve buenas prácticas de programación, como la separación de preocupaciones y la reutilización de código, lo que contribuye a un desarrollo más eficiente y organizado.

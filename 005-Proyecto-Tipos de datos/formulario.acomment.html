@@ -1,0 +1,23 @@
+﻿El fragmento de código del ejercicio del curso  es una plantilla HTML básica que parece estar diseñada para crear un formulario web. Aquí está la explicación de cada parte de este código:
+
+1. `<!doctype html>`: Esto declara que el documento sigue la especificación HTML5.
+
+2. `<html>`: Este es el elemento raíz de un documento HTML.
+
+3. `<head>`: Esta sección contiene metainformación sobre el documento, como enlaces a hojas de estilo y scripts, y otras configuraciones importantes.
+
+   - `<link rel="stylesheet" href="estilo.css">`: Este elemento `<link>` se utiliza para vincular una hoja de estilo externa llamada "estilo.css" al documento HTML. Esta hoja de estilo se utilizará para aplicar estilos a la página web.
+
+4. `<body>`: Esta sección contiene el contenido visible de la página web.
+
+   - `<form action="procesa.php" method="POST">`: Aquí se crea un formulario HTML. 
+     - `action`: Define la URL a la que se enviarán los datos del formulario cuando se envíe. En este caso, los datos se enviarán a "procesa.php".
+     - `method`: Define el método HTTP utilizado para enviar los datos del formulario. En este caso, se utiliza "POST", lo que significa que los datos se enviarán de manera segura al servidor.
+
+   - `<div id="contienecampos">`: Aquí se crea un div con el atributo "id" igual a "contienecampos". Este div probablemente se utiliza para contener los campos del formulario, pero está vacío en el código proporcionado.
+
+   - `<input type="submit">`: Este es un botón de envío. Cuando un usuario hace clic en él, el formulario se enviará a la URL especificada en el atributo "action". En este caso, el botón de envío no tiene ningún texto visible, lo que significa que podría no mostrar ningún texto en la página.
+
+   - `<script src="formulario.js"></script>`: Este elemento `<script>` se utiliza para cargar un archivo JavaScript externo llamado "formulario.js". Este archivo probablemente contiene código JavaScript que se ejecutará en la página para agregar dinámicamente campos al formulario dentro del div con id "contienecampos".
+
+En resumen, este código HTML establece la estructura básica de una página web que incluye un formulario. Utiliza una hoja de estilo externa y carga un archivo JavaScript externo para la funcionalidad dinámica. El formulario se enviará a "procesa.php" cuando se haga clic en el botón de envío.

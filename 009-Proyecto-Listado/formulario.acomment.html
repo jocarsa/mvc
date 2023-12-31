@@ -1,0 +1,33 @@
+﻿La diferencia principal entre el código proporcionado y el código anterior se encuentra en el segundo conjunto de llamadas `fetch` y el segundo conjunto de funciones de manejo `.then`. Aquí está la explicación de esta diferencia:
+
+El código del ejercicio del curso  incluye otro conjunto de llamadas `fetch` y funciones de manejo `.then` dentro del evento "click" de los botones generados dinámicamente. Esto ocurre cuando un usuario hace clic en uno de los botones generados en la primera parte del código. Veamos esta parte en detalle:
+
+1. Cuando un botón se hace clic, se ejecuta el siguiente bloque de código:
+   
+   ```javascript
+   fetch("listado.php?coleccion="+campo)
+   .then(function(response){
+       return response.json();
+   })
+   .then(function(datos){
+       console.log(datos)
+       document.getElementById("archivos").innerHTML = ""
+       for(let u = 0; u < datos.length; u++){
+           document.getElementById("archivos").innerHTML += "<div class='archivo'>"+datos[u]+"</div>"
+       }
+   })
+   ```
+
+   - `fetch("listado.php?coleccion="+campo)`: Realiza una solicitud HTTP GET a "listado.php" con un parámetro "coleccion" que contiene el nombre de la colección seleccionada (`campo` es el nombre del botón en este contexto). Esto se hace para obtener una lista de archivos relacionados con la colección seleccionada.
+
+   - `.then(function(response){ return response.json(); })`: Convierte la respuesta de la solicitud en formato JSON.
+
+   - `.then(function(datos){ ... })`: Procesa los datos JSON obtenidos de la respuesta de la solicitud.
+
+     - `console.log(datos)`: Muestra los datos en la consola para depuración.
+
+     - `document.getElementById("archivos").innerHTML = ""`: Borra cualquier contenido previo dentro del elemento con el ID "archivos".
+
+     - Luego, itera a través de los datos (que son una lista de nombres de archivos) y agrega estos nombres como elementos dentro del elemento con el ID "archivos". Esto crea una lista de archivos relacionados con la colección seleccionada y los muestra en la página web.
+
+En resumen, esta parte del código realiza una segunda solicitud `fetch` después de que el usuario hace clic en un botón, obteniendo una lista de archivos relacionados con la colección seleccionada y mostrándolos en la página. Esto añade funcionalidad adicional a la página web, permitiendo al usuario explorar y visualizar los archivos asociados a una colección específica.

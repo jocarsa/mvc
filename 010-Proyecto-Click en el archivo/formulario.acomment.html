@@ -1,0 +1,48 @@
+El código proporcionado es una extensión del código anterior, y la diferencia principal está en la segunda llamada `fetch` y el segundo conjunto de funciones de manejo `.then`. Aquí está la explicación de estas diferencias:
+
+La primera parte del código (que ya explicamos) se encarga de cargar información sobre colecciones y campos cuando se hacen clic en los botones generados dinámicamente. Aquí están las diferencias clave en la segunda parte del código:
+
+1. Cuando se hace clic en un botón (representando una colección), se ejecuta el siguiente bloque de código:
+
+   ```javascript
+   fetch("listado.php?coleccion="+campo)
+   .then(function(response){
+       return response.json();
+   })
+   .then(function(datos){
+       console.log(datos)
+       document.getElementById("archivos").innerHTML = ""
+       for(let u = 0; u < datos.length; u++){
+           document.getElementById("archivos").innerHTML += "<div class='archivo'>"+datos[u]+"</div>"
+       }
+       let archivos = document.getElementsByClassName("archivo")
+       for(let i = 0; i < archivos.length; i++){
+           archivos[i].onclick = function(){
+               console.log("Has hecho clic en el archivo")
+               miarchivo = this.innerText
+               console.log("voy a abrir el archivo:"+miarchivo)
+               fetch("db/"+campo+"/"+miarchivo)
+               .then(function(response){
+                   return response.json();
+               })
+               .then(function(datos){
+                   console.log(datos)
+                   for (const clave in datos) {
+                     if (datos.hasOwnProperty(clave)) {
+                       const valor = datos[clave];
+                       document.querySelector("[name="+clave+"]").value = valor
+                     }
+                   }
+               })
+           }
+       }
+   })
+   ```
+
+   - Después de obtener la lista de archivos relacionados con la colección seleccionada y mostrarlos en la página (dentro del elemento con ID "archivos"), se realiza una acción adicional cuando se hace clic en un archivo.
+
+   - Cuando se hace clic en un archivo, se ejecuta una nueva solicitud `fetch` para obtener el contenido de ese archivo desde la ruta "db/campo/miarchivo" (donde "campo" es el nombre de la colección y "miarchivo" es el nombre del archivo seleccionado).
+
+   - Se procesa el contenido del archivo JSON obtenido y se asignan los valores a los campos del formulario. Esto se hace iterando a través de los datos del archivo JSON y buscando campos con nombres coincidentes en el formulario HTML, asignando sus valores correspondientes.
+
+En resumen, esta parte del código se encarga de cargar y mostrar información detallada sobre archivos cuando se hace clic en un archivo específico de la lista de archivos relacionados con una colección. Además, llena automáticamente los campos del formulario con los valores contenidos en el archivo seleccionado.

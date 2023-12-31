@@ -1,0 +1,27 @@
+﻿El bloque de código del ejercicio del curso  parece ser un conjunto de reglas CSS que se aplicarán a elementos HTML en una página web. Estas reglas se utilizan para establecer el estilo y la apariencia de la página. Aquí está la explicación de cada parte del código CSS:
+
+1. `body`: Este selector aplica estilos al elemento `<body>` de la página web, que es el contenedor principal de todo el contenido.
+
+   - `background: rgb(220, 220, 220);`: Establece el color de fondo del cuerpo de la página en un tono de gris claro (rgb(220, 220, 220)). Esto cambia el fondo de toda la página web.
+
+2. `form`: Este selector aplica estilos a todos los elementos `<form>` en la página. Los elementos `<form>` suelen utilizarse para crear formularios web.
+
+   - `margin: auto;`: Centra el formulario horizontalmente en el centro de su contenedor principal. Esto se logra estableciendo los márgenes izquierdo y derecho en "auto".
+
+   - `width: 300px;`: Establece el ancho del formulario en 300 píxeles.
+
+   - `background: white;`: Establece el color de fondo del formulario en blanco.
+
+   - `padding: 20px;`: Agrega un espacio de 20 píxeles dentro del formulario, entre el contenido y los bordes. Esto crea un espacio alrededor del contenido del formulario.
+
+3. `form input`: Este selector aplica estilos a todos los elementos de entrada (`<input>`) que están dentro de un formulario (`<form>`).
+
+   - `width: 100%;`: Establece el ancho de los campos de entrada al 100% del ancho disponible dentro del formulario. Esto hace que los campos de entrada ocupen todo el ancho del formulario.
+
+   - `box-sizing: border-box;`: Cambia el modelo de caja de los campos de entrada para que el ancho especificado incluya el relleno (padding) y el borde. Esto garantiza que el ancho total del campo de entrada sea de 100% y que el relleno no lo haga más ancho.
+
+   - `padding: 5px;`: Agrega un espacio de 5 píxeles dentro de los campos de entrada, entre el texto y los bordes del campo.
+
+   - `margin-top: 10px;`: Agrega un margen superior de 10 píxeles a cada campo de entrada, lo que crea un espacio entre los campos.
+
+En resumen, este conjunto de reglas CSS se utiliza para establecer el estilo de la página web. Estos estilos afectan al fondo de la página, al formulario y a los campos de entrada dentro del formulario, centran el formulario en la página y controlan los márgenes, el ancho y el espacio en los campos de entrada.

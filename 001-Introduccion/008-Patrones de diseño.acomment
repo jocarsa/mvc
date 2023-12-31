@@ -1,0 +1,27 @@
+Un patrón de diseño es una solución general y reutilizable para un problema común en el diseño de software. Estos patrones representan las mejores prácticas y la experiencia acumulada de desarrolladores y arquitectos de software a lo largo del tiempo. Al utilizar patrones de diseño, los desarrolladores pueden abordar problemas específicos de manera efectiva y eficiente, lo que resulta en un código más estructurado, mantenible y escalable.
+
+Los patrones de diseño proporcionan una descripción de cómo resolver un problema particular en un contexto específico y constan de varios elementos clave:
+
+1. Nombre del patrón: Un nombre descriptivo que identifica el patrón y lo hace fácil de referenciar.
+
+2. Problema: Una explicación del problema común que el patrón aborda. Describe cuándo y en qué situación se debe aplicar el patrón.
+
+3. Solución: La descripción de la solución al problema, que incluye cómo se organizan y relacionan los componentes del software.
+
+4. Consecuencias: Las implicaciones y consideraciones importantes que deben tenerse en cuenta al aplicar el patrón, como ventajas y desventajas.
+
+Los patrones de diseño no son soluciones concretas y de "copia y pega", sino más bien directrices que los desarrolladores pueden adaptar y personalizar según las necesidades de su proyecto. Ayudan a estandarizar el diseño de software y permiten que los equipos de desarrollo se comuniquen de manera efectiva al hablar sobre soluciones a problemas comunes.
+
+Algunos ejemplos de patrones de diseño populares incluyen:
+
+1. Patrón Singleton: Garantiza que una clase tenga una única instancia y proporciona un punto de acceso global a esa instancia.
+
+2. Patrón Factory Method: Define una interfaz para crear objetos, pero permite que las subclases decidan qué clase instanciar.
+
+3. Patrón Observer: Define una relación uno a muchos entre objetos, de modo que cuando un objeto cambia de estado, todos sus observadores son notificados y actualizados automáticamente.
+
+4. Patrón Strategy: Permite definir una familia de algoritmos, encapsular cada uno de ellos y hacerlos intercambiables. Los clientes pueden elegir la estrategia que deseen utilizar.
+
+5. Patrón MVC (Modelo-Vista-Controlador): Divide una aplicación en tres componentes principales para gestionar la lógica de negocios, la interfaz de usuario y la presentación de datos por separado.
+
+La comprensión y el uso adecuado de los patrones de diseño son habilidades valiosas para los desarrolladores de software, ya que ayudan a mejorar la calidad del código y la eficiencia del desarrollo.

@@ -1,0 +1,7 @@
+Hasta el momento, en el desarrollo de nuestra aplicación empresarial, hemos aplicado el patrón de diseño Modelo-Vista-Controlador (MVC) de manera efectiva. Sin embargo, una aplicación empresarial típicamente involucra la implementación de las cuatro operaciones básicas: inserción de registros, listado de registros, actualización de registros y eliminación de registros.
+
+Hasta la versión anterior de este ejercicio, habíamos implementado con éxito la operación de inserción de nuevos registros. Sin embargo, en esta siguiente versión del ejercicio, vamos a llevar a cabo una nueva implementación que nos permitirá no solo insertar nuevos registros, sino también obtener un listado de los registros que hemos guardado previamente.
+
+Para lograr esto, necesitaremos un archivo PHP que sea capaz de obtener los registros. Una vez más, enfatizamos la importancia de no mezclar la vista con el controlador. El contenido de este archivo PHP será cargado por la vista de forma asincrónica, lo que significa que se realizará de manera independiente al flujo principal de la aplicación. Esto nos permite mantener una separación clara entre la vista, el modelo y el controlador.
+
+Esta implementación añade funcionalidad a nuestra aplicación, permitiéndonos interactuar con los registros de manera más completa al ofrecer la capacidad de listarlos. Continuamos siguiendo las mejores prácticas del patrón MVC para un desarrollo de software más organizado y mantenible.

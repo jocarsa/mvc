@@ -1,0 +1,5 @@
+En esta versión del ejercicio, implementamos un cambio mínimo pero significativo en términos de usabilidad. Hasta este momento, cuando el usuario rellenaba un formulario y lo enviaba para que el controlador lo procesara, la ejecución de todo el programa completo se quedaba detenida en ese punto. Esto requería que nosotros, como desarrolladores, fuéramos a la carpeta donde se encuentra la base de datos para comprobar si el registro se había guardado correctamente.
+
+En esta última versión del ejercicio, una vez que nos hemos asegurado de que el registro se ha guardado correctamente en la base de datos, estableceremos una redirección. Esta redirección permitirá que el usuario vuelva a la vista, es decir, al formulario inicial. De esta manera, si lo desea, el usuario podrá guardar un nuevo registro de forma más fluida y sin tener que realizar acciones adicionales.
+
+Este pequeño cambio mejora la experiencia del usuario, ya que hace que el flujo de trabajo sea más eficiente y menos disruptivo.

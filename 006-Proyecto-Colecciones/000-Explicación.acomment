@@ -1,0 +1,9 @@
+En esta siguiente parte del ejercicio, implementamos la capacidad de que dentro de una misma aplicación puedan guardarse diferentes tipos de datos. Hasta la versión anterior de este ejercicio, habíamos logrado que la aplicación trabajara con un solo tipo de información, que básicamente consistía en la información de clientes. Sin embargo, en una aplicación informática, es común trabajar con múltiples entidades, como clientes, productos, compras, pedidos, etc.
+
+En esta siguiente versión del ejercicio, actualizamos el archivo del modelo de datos para que no solo pueda guardar un tipo de entidad de información, sino que sea capaz de guardar tantos tipos como sea necesario. En el ejemplo que estamos abordando en estos momentos, estamos guardando dos tipos de entidades: clientes y productos.
+
+De esta manera, cuando presentamos la interfaz de usuario, es decir, cuando presentamos la vista o el formulario HTML, el usuario podrá elegir entre los diferentes tipos de entidades que se encuentran dentro del modelo de datos. En función de la elección que realice, se le presentarán los campos de un formulario correspondiente a esa entidad específica.
+
+Este ejercicio, por lo tanto, continúa desde la versión anterior, pero demuestra que la misma aplicación que estamos desarrollando se puede reutilizar para tantas entidades como sea necesario. No es necesario crear un controlador y una vista diferentes para cada entidad del modelo de datos. Técnicamente, podemos reutilizar la misma vista y el mismo controlador, independientemente de la entidad con la que estemos trabajando.
+
+Esta modularidad y flexibilidad son características esenciales en el desarrollo de aplicaciones escalables y versátiles.

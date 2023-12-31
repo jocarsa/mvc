@@ -1,0 +1,18 @@
+﻿El fragmento de código CSS del ejercicio del curso  se utiliza para definir estilos para elementos HTML en tu página web. Aquí está la explicación de cada parte del código:
+
+1. `body`: Este selector aplica estilos al elemento `<body>` de tu página web. Los estilos definidos aquí son:
+   - `background: rgb(220, 220, 220);`: Establece el color de fondo del cuerpo de la página en un tono de gris claro (RGB 220, 220, 220).
+
+2. `form`: Este selector aplica estilos a los elementos `<form>` de tu página web (en este caso, el formulario que definiste en el código HTML anterior). Los estilos definidos son:
+   - `margin: auto;`: Centra horizontalmente el formulario en la página al establecer el margen izquierdo y derecho en "auto".
+   - `width: 300px;`: Establece un ancho fijo para el formulario de 300 píxeles.
+   - `background: white;`: Establece el fondo del formulario en color blanco.
+   - `padding: 20px;`: Agrega un espacio de relleno de 20 píxeles alrededor del contenido del formulario.
+
+3. `form input`: Este selector aplica estilos a todos los elementos `<input>` que están dentro de un formulario. Los estilos definidos son:
+   - `width: 100%;`: Establece el ancho de los campos de entrada al 100% del ancho del formulario, lo que significa que se expandirán para llenar todo el ancho del formulario.
+   - `box-sizing: border-box;`: Cambia la forma en que se calcula el ancho de los campos de entrada para que el relleno (padding) y el borde (border) se incluyan en el ancho total del campo. Esto asegura que los campos de entrada no se desborden del ancho del formulario debido al relleno y al borde.
+   - `padding: 5px;`: Agrega un pequeño espacio de relleno de 5 píxeles en el interior de cada campo de entrada.
+   - `margin-top: 10px;`: Agrega un margen superior de 10 píxeles a cada campo de entrada, creando un espacio vertical entre ellos.
+
+En resumen, este código CSS se utiliza para dar estilo a la página web y al formulario. Establece un fondo de color gris claro para el cuerpo de la página, centra el formulario en la página, le da un fondo blanco y aplica estilos a los campos de entrada para que se ajusten al ancho del formulario y tengan un espacio de relleno y margen superior. Estos estilos pueden personalizarse aún más según tus necesidades de diseño.
